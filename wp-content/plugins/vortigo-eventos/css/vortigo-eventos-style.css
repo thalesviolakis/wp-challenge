@@ -1,0 +1,17 @@
+ul.lista-Eventos li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+ul.lista-Eventos li span.evento {
+  color: #007bff;
+  font-weight: bold;
+}
+
+ul.lista-Eventos li span.data {
+  font-weight: 600;
+}
+
+ul.lista-Eventos span {
+  display: block;
+}

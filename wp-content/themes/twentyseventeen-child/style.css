@@ -1,0 +1,122 @@
+/*
+ Theme Name:   Twenty Seventeen Child Theme
+ Theme URI:    https://br.wordpress.org/themes/twentyseventeen/
+ Description:  Twenty Seventeen Child Theme
+ Author:       Thales Violakis
+ Author URI:   http://thalesviolakis.com
+ Template:     twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentyseventeen-child
+*/
+
+/* Widgets */
+
+h2.widget-title {
+  font-size: 24px;
+}
+
+
+/* header */
+#wp-custom-header,
+.custom-header-media:before,
+#wp-custom-header:before,
+.site-header .menu-scroll-down {
+  display: none;
+}
+
+.site-header .menu-scroll-down {
+  color: #000;
+  top: 2em;
+}
+
+.custom-header-media {
+  height: auto;
+}
+
+/* homepage  */
+
+.home .has-header-image.twentyseventeen-front-page .site-branding,
+.home .has-header-video.twentyseventeen-front-page .site-branding,
+.home .has-header-image.home.blog .site-branding,
+.home .has-header-video.home.blog .site-branding {
+  height: 20px;
+  top: 30px;
+  z-index: 999999;
+}
+
+.home .site-branding {
+  top: 0px;
+  z-index: 999999;
+  position: absolute;
+}
+
+.home .site-branding .site-branding-text {
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  margin-top: 20px;
+  display: flex;
+  float: left;
+}
+
+.home .site-branding a {
+  color: #fff;
+}
+
+.home .page-title {
+  display: none;
+}
+
+.site-content {
+  padding: 10px 0px;
+}
+
+
+
+.widget-posts-maisacessados span {
+  color: #007bff;
+}
+
+/* Como no slider aparece a informação ocultamos a duplicidade */
+
+/* Slider */
+
+.twentyseventeen-front-page.has-header-image .custom-header-media,
+.twentyseventeen-front-page.has-header-video .custom-header-media,
+.home.blog.has-header-image .custom-header-media,
+.home.blog.has-header-video .custom-header-media,
+.theme-default .nivoSlider img {
+  max-height: 450px;
+}
+
+.theme-default .nivo-controlNav {
+  /* text-align: center; */
+  padding: 0;
+  position: relative;
+  bottom: 60px;
+  z-index: 99999999999;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+  /* Slider */
+
+  .has-header-image.twentyseventeen-front-page .custom-header,
+  .has-header-video.twentyseventeen-front-page .custom-header,
+  .has-header-image.home.blog .custom-header,
+  .has-header-video.home.blog .custom-header {
+    height: 30vh;
+  }
+
+  .custom-header,
+  .twentyseventeen-front-page.has-header-image .custom-header-media,
+  .twentyseventeen-front-page.has-header-video .custom-header-media,
+  .home.blog.has-header-image .custom-header-media,
+  .home.blog.has-header-video .custom-header-media,
+  .theme-default .nivoSlider img {
+    max-height: 450px;
+  }
+}
